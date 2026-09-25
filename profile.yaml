@@ -1,89 +1,148 @@
 # ==========================================================================
 # YOUR APPLICATION PROFILE
-# Copy this file to profile.yaml (that filename is gitignored, so your real
-# details never get committed) and fill it in with real facts. Every answer
-# the script gives on a form is generated from this file -- nothing here
-# should be something you'd be uncomfortable being asked about in an
-# interview.
+# Filled based on your current resume and the details you provided
 # ==========================================================================
 
 target_roles:
-  - "Data Engineer"
-  - "Backend Developer"
-  # add every role variant you actually want to be found under
+  - "Java Backend Developer"
+  - "Java Developer"
+  - "Spring Boot Developer"
+  - "Backend Engineer"
+  - "Java Software Engineer"
 
-# Controls how strictly a job's title must match the role you searched for.
-# Naukri's own search is loose (e.g. "Data Engineer" can surface completely
-# unrelated titles), so this filter re-checks the title itself. A card is
-# kept only if its title contains at least one of these words. If a role
-# isn't listed here, the script falls back to using the role's own words
-# (minus generic terms like "engineer"/"developer").
+# The job title must contain at least one of these terms.
 role_required_keywords:
-  "Data Engineer": ["data engineer"]
-  "Backend Developer": ["backend developer", "backend engineer"]
+  "Java Backend Developer":
+    - "java backend developer"
+    - "java developer"
+    - "backend developer"
+    - "java engineer"
+  "Java Developer":
+    - "java developer"
+    - "java software engineer"
+    - "java engineer"
+  "Spring Boot Developer":
+    - "spring boot developer"
+    - "java developer"
+    - "backend developer"
+  "Backend Engineer":
+    - "backend engineer"
+    - "backend developer"
+    - "java engineer"
+  "Java Software Engineer":
+    - "java software engineer"
+    - "java developer"
+    - "software engineer"
 
 current_city: "Bengaluru"
-relocate_cities: []          # e.g. ["Hyderabad", "Pune"] -- leave empty if you won't relocate
-work_mode: "onsite_or_hybrid"   # onsite_or_hybrid | remote_only | flexible
+
+relocate_cities: ["hyderabad", "Pune", "Bengaluru", "Chennai", "Mumbai"]
+
+work_mode: "onsite_or_hybrid"
+
 night_shift_ok: false
 weekend_ok: false
 
-total_experience_years: 0
-current_employer: "Your Company Name"
-current_title_official: "Your Official Title"
-current_title_functional: "What you actually do day to day"
-notice_period_days: 30                         # set to your real, current notice period
+total_experience_years: 2.4
+
+current_employer: "Finstack Solutions"
+
+current_title_official: "Java Developer"
+
+current_title_functional: "Java Backend Developer working on banking integration, REST APIs, Spring Boot services, trade finance applications, production support, API performance, concurrency handling, and enterprise banking systems"
+
+notice_period_days: 30
+
 immediately_available: false
 
-current_ctc_lpa: null        # fill in your real number, in Lakhs Per Annum
-expected_ctc_lpa: null
-ctc_disclosure_policy: "negotiable"   # negotiable | real_numbers
+current_ctc_lpa: 5.4
 
-highest_qualification: "Your degree, Your college"
-certifications: []           # e.g. ["AWS Certified Developer", "Azure Fundamentals"]
+expected_ctc_lpa: 10.0
 
-skills_primary:              # things you'd rate yourself strongly on
-  - "Skill 1"
-  - "Skill 2"
+ctc_disclosure_policy: "negotiable"
 
-skills_adjacent:             # real but lighter exposure -- answer these modestly, never round up
-  - "Skill you've self-studied or have light exposure to"
+highest_qualification: "Bachelor of Technology in Information Technology, Sri Venkateswara College of Engineering and Technology, Chittoor"
+
+certifications:
+  - "Web Development Certification – Internshala"
+  - "Python Basics – Infosys Springboard"
+  - "Getting Started with AWS Machine Learning – Coursera"
+  - "Python Basics Certification – HackerRank"
+  - "Problem Solving Basics Certification – HackerRank"
+
+skills_primary:
+  - "java"
+  - "spring boot"
+  - "restful apis"
+  - "microservices"
+  - "hibernate"
+  - "jpa"
+  - "sql"
+  - "oracle"
+  - "postgresql"
+  - "mysql"
+  - "apache kafka"
+  - "redis"
+  - "ibm mq"
+  - "jwt"
+  - "oauth2"
+  - "git"
+  - "jenkins"
+  - "docker"
+  - "junit"
+  - "mockito"
+  - "swagger"
+  - "postman"
+
+skills_adjacent:
+  - "GraphQL"
+  - "Cassandra"
+  - "Prometheus"
+  - "Grafana"
+  - "Zipkin"
+  - "Sleuth"
+  - "Jersey"
+  - "Eureka Server"
+  - "API Gateway"
+  - "SonarQube"
+  - "Snyk"
+  - "Fortify"
+  - "Python"
+  - "Machine Learning"
 
 work_history_narrative: |
-  Write 2-4 sentences in your own words describing your actual work
-  history and what you do. This is what free-text screening answers get
-  built from, so be specific and honest -- the AI won't invent anything
-  beyond what's written here.
+  Java Backend Developer with 2+ years of experience developing enterprise
+  banking and financial applications. Currently working at Finstack Solutions
+  on Alrajhi Bank banking integration systems, developing middleware adapters,
+  REST APIs, scheduled batch processes, API performance improvements,
+  concurrency and idempotency mechanisms, monitoring, and production support.
+  Previously worked on State Bank of India corporate banking solutions,
+  delivering 20+ REST APIs for Import Letters of Credit, STP automation,
+  validation workflows, and enquiry services. Experienced in Java, Spring Boot,
+  microservices, REST APIs, Hibernate/JPA, Kafka, Redis, IBM MQ, Oracle,
+  PostgreSQL, MySQL, JWT, Jenkins, Docker, testing, monitoring, and production
+  issue resolution.
 
-company_exclude: []          # e.g. ["Your Current Employer"] -- filter rule, not a fact
-company_include_only: []     # leave empty to not restrict
+company_exclude: []
 
-seniority_floor_years: 0
+company_include_only: []
+
+seniority_floor_years: 1
+
 seniority_ceiling_years: 5
-job_freshness_days: 3          # Naukri's "freshness" filter -- only jobs posted in the last N days
+
+job_freshness_days: 3
 
 salary_floor_lpa: null
 
-stop_after_n_applications: 20
+stop_after_n_applications: 100
+
 pace_seconds_between_actions: 30
 
-# How long to wait for you to type an answer when the script hits a
-# question it can't answer safely on its own (personal details like DOB,
-# or anything the AI genuinely doesn't know from your profile). If you
-# don't respond in time, that one listing is skipped -- the run continues.
 human_input_timeout_seconds: 120
 
-# How many search-result pages to go through per role before moving to the
-# next role (or stopping, if stop_after_n_applications is reached first).
 max_pages_per_role: 5
 
-# How the browser window behaves while running:
-#   "visible"   -- normal window, you can watch it (best for early runs / debugging)
-#   "minimized" -- a real browser still opens and does everything the same way,
-#                  but starts minimized to the taskbar so it's out of your way
-#   "headless"  -- no window at all, fastest, but a genuinely fake/invisible
-#                  browser is somewhat easier for a site to detect as a bot
-#                  than a real (even minimized) one -- slightly higher risk
 browser_mode: "minimized"
 
-resume_file_name: "your_resume.pdf"   # must match the filename already uploaded to Naukri/LinkedIn, and sit in this same project folder
+resume_file_name: "vaddeBabu_JavaDeveloper.docx"
